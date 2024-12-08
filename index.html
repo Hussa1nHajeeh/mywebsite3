@@ -1,20 +1,142 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Website</title>
   <style>
-     body{
-         text-align: center;
-         background-image: linear-gradient(rgb(13, 175, 177), rgb(222, 222, 222));
-         min-width: 100%;
-         min-height: 100%;
-      }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      float: left;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    section {
+      padding: 20px;
+      margin: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .card {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card p {
+      color: #666;
+    }
   </style>
 </head>
-
 <body>
-<h1>My Website</h1>
 
+<header>
+  <h1>Welcome to My Simple Website</h1>
+</header>
 
+<nav>
+  <a href="#home">Home</a>
+  <a href="#servicesandbreeds">Services</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Home Section</h2>
+  <p>Welcome to my website! This is the homepage where you can find the latest updates on cats and more!</p>
+</section>
+
+<section id="servicesandbreeds">
+  <h2>Services</h2>
+  <div class="card">
+    <h3>Adoption Centers</h3>
+    <p>There are many adoption centers across the world, but if you live in Bahrain, we're the ones to come to.</p>
+  </div>
+  <div class="card">
+    <h3>Breeds of cats that we have and that are up for adoption.</h3>
+    <p>Here are 10 popular cat breeds that we have.: <br>
+
+1. Persian – Known for their long, luxurious fur and calm temperament.
+<br> 
+2. Siamese – A vocal and social breed with striking blue eyes and a sleek coat.
+<br>
+3. Maine Coon – One of the largest domestic cat breeds, with a tufted coat and friendly nature.
+<br>
+4. Bengal – A wild-looking breed with a spotted or marbled coat pattern resembling a leopard.
+<br>
+5. Ragdoll – Known for their relaxed demeanor and tendency to go limp when picked up.
+<br>
+6. Sphynx – A hairless breed that is affectionate and loves attention.
+<br>
+7. Scottish Fold – Famous for their unique folded ears and sweet personality.
+<br>
+8. Abyssinian – A playful and active breed with a short, ticked coat.
+<br>
+9. British Shorthair – A round-faced cat with a plush coat, often in blue (gray).
+<br>
+10.Russian Blue – A sleek, blue-gray cat with green eyes and a gentle personality.</p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Cats</h2>
+  <p>Cats are independent, agile, and playful animals known for their unique personalities. Popular as pets, they form strong bonds with their owners while maintaining a sense of mystery. Skilled hunters with sharp senses and quick reflexes, cats enjoy playful behavior and grooming. With various breeds, from sleek Siamese to fluffy Maine Coons, cats are both fascinating and beloved companions..</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>If you'd like to adopt a cat, feel free to send us a message!</p>
+  <form action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
+    <input type="submit" value="Send Message">
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Cats.com </p>
+</footer>
 
 </body>
-
 </html>
